@@ -10,7 +10,7 @@ int main()
 
 int obtenerNumeros(void){
     int numero;
-    int valorAcumulado=0;
+    int acumulador=0;
     int i=0;
     float promedio;
 
@@ -18,10 +18,17 @@ int obtenerNumeros(void){
     {
         printf("Ingrese un numero\n");
         scanf("%d",&numero);
-        valorAcumulado+=numero;
+        acumulador+=numero;
     }
-    promedio=(float)valorAcumulado/CANTIDAD_NUMEROS;
-    printf("\nEl promedio es: %.2f",promedio);
+    //promedio=(float)acumulador/CANTIDAD_NUMEROS;
+    
+    if(!calcularPromedio(acumulador,CANTIDAD_NUMEROS,&promedio))//negar es lo mismo que decir calcularPromedio()==0
+    {
+            printf("\nEl promedio es: %.2f",promedio);
+    }
+    else{
+        printf("ERROR");
+    }
     return 0;
 }
 
@@ -35,3 +42,4 @@ int calcularPromedio(int valorAcumulado, int cantidad, float *promedio)
     }
     return retorno;
 }
+
