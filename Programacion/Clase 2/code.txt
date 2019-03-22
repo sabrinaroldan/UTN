@@ -52,7 +52,6 @@ int calcularMaximoYMinimo (void)
     int minimo=INT_MAX;
     int numero;
     int i=0;
-    int retorno=-1;
 
     printf("Calcular el numero maximo y el numero minimo");
     for(i;i<CANTIDAD_NUMEROS;i++)
@@ -69,9 +68,5 @@ int calcularMaximoYMinimo (void)
     printf("\nEl numero maximo es: %d\n",maximo);
     printf("El numero minimo es: %d\n",minimo);
 
-    if(maximo!=NULL && minimo!=NULL)
-    {
-        return 0;
-    }
-    return retorno;
+    return 0;
 }
