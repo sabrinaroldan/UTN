@@ -43,3 +43,40 @@ int calcularPromedio(int valorAcumulado, int cantidad, float *promedio)
     return retorno;
 }
 
+int calcularMaximo (void)
+{
+    int maximo=0;
+    int numero;
+    int i=0;
+
+    printf("Calcular el numero maximo");
+    for(i;i<CANTIDAD_NUMEROS;i++)
+    {
+    printf("\nIngrese un numero\n");
+    scanf("%d",&numero);
+        if(numero>maximo){
+            maximo=numero;
+        }
+    }
+    printf("El numero maximo es: %d\n",maximo);
+    return 0;
+}
+
+int calcularMinimo (void)
+{
+    int minimo=100;
+    int numero;
+    int i=0;
+
+    printf("\nCalcular el numero minimo");
+    for(i;i<CANTIDAD_NUMEROS;i++)
+    {
+    printf("\nIngrese un numero\n");
+    scanf("%d",&numero);
+        if(numero<minimo){
+            minimo=numero;
+        }
+    }
+    printf("El numero minimo es: %d\n",minimo);
+    return 0;
+}
