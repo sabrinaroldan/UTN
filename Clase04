@@ -7,8 +7,17 @@ int getInt(char *mensaje,char *mensajeError, int minimo, int maximo, int reinten
 
 int main()
 {
+    int numeroIngresado;
+    int errorDeIngreso;
+    errorDeIngreso=getInt("Ingrese un numero","Error",0,50,2,&numeroIngresado);
 
-
+    if(errorDeIngreso)
+    {
+        printf("Numero de ingreso no valido");
+    }else
+    {
+        printf("El numero ingresado es: %d",numeroDeIngreso);
+    }
     return 0;
 }
 
