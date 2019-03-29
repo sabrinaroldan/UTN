@@ -165,3 +165,14 @@ int getFloat (char *mensaje, char *mensajeError, float maximo, float minimo, int
     return retorno;
 }
 
+
+--------------------------------
+
+get char
+
+scanf lee hasta el enter, en vez de una vez ingresa 2 caracteres
+buffer
+fflush limpiar 
+fflush(stdin); //windows
+__fpurge(stdin);
+ejecutarlas antes de scanf, no despuès
