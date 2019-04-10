@@ -3,10 +3,10 @@
 //{}
 int utn_isValidNumber(char *str);
 int getNumber(  char *msg, char *msgError,int minimo, int maximo, int reintentos,
-                int resultado);
+                int *resultado);
 
 int getString(  char *msg, char *msgError,int minimo, int maximo, int reintentos,
-                char resultado);
+                char *resultado);
 
 int main()
 {
@@ -24,7 +24,19 @@ int utn_isValidNumber(char*str)
 }
 
 int getString(  char *msg, char *msgError,int minimo, int maximo, int reintentos,
-                char resultado)
+                char *resultado)
 
     strncpy(resultado, "1234",5);
     return 0;
+
+
+int getNumber(  char *msg, char *msgError,int minimo, int maximo, int reintentos,
+                int *resultado);
+
+    int retorno=-1;
+
+    if msh!=null //validar
+
+    //recibir los parametros bien y obtener el numero que esta ingresando el usuario
+    punteros no null
+    return retorno;
