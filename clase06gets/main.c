@@ -22,3 +22,9 @@ int utn_isValidNumber(char*str)
 
 
 }
+
+int getString(  char *msg, char *msgError,int minimo, int maximo, int reintentos,
+                char resultado)
+
+    strncpy(resultado, "1234",5);
+    return 0;
