@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+/*[ ]
+--{}  */
+int main()
+{
+    char nombre [7]={'X','O','X','X','\0'};
+    char nombre2 [7]="HOLA";
+
+
+    //strcpy
+    //Puedo pasar la cantidad de elementos que permito copiar en el destino.
+    //Los numeros serìa mejor ponerlos en un define.
+    //sizeof() Funcion que me dice que tamaño en memoria tiene una array
+
+    strncpy(nombre,nombre2,sizeof(nombre));
+    //fget() es una funcion que lee desde un file
+
+    printf("\n%s",nombre);
+    fgets(nombre, sizeof(nombre),stdin);
+    printf("\n%s",nombre);
+    //strlen();
+    //strcmp();
+
+
+    return 0;
+}
+
