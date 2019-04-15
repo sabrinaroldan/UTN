@@ -33,6 +33,21 @@ int getString ( char* msg,
     return retorno;
 }
 
+int isValidName (char* cadena)
+{
+    int retorno = TRUE;
+    int i;
+    for( i=0 ; cadena[i] != '\0'  ; i++)
+    {
+        if((cadena[i] > 'Z' || cadena[i] < 'A') && (cadena[i] > 'z' || cadena[i] < 'a')  )
+        {
+            retorno = FALSE;
+            break;
+        }
+    }
+    return retorno;
+}
+
 int getName (   char* msg,
                 char* msgError,
                 int minimo,
@@ -57,18 +72,44 @@ int getName (   char* msg,
     return retorno;
 }
 
-
-int isValidName (char* cadena)
+int isValidNum (char* cadena)
 {
     int retorno = TRUE;
     int i;
     for( i=0 ; cadena[i] != '\0'  ; i++)
     {
-        if((cadena[i] > 'Z' || cadena[i] < 'A') && (cadena[i] > 'z' || cadena[i] < 'a')  )
+        if(cadena[i] > '9' && cadena[i] < '0')
         {
             retorno = FALSE;
             break;
         }
     }
     return retorno;
+}
+
+
+int getCreditCard ( char* msg,
+                    char* msgError,
+                    int minimo,
+                    int maximo,
+                    int reintentos,
+                    char* resultado)
+{
+    int retorno = -1;
+    char bufferStr[4096];
+    if(msg != NULL && msgError != NULL && minimo < maximo && reintentos>=0 && resultado != NULL)
+    {
+        if(!getString(msg,msgError,minimo,maximo,reintentos,bufferStr))
+        {
+            if(isValidNum(bufferStr))
+            {
+                strncpy(resultado, bufferStr,maximo);
+                retorno = 0;
+            }
+        }
+
+    }
+    return retorno;
+
+
 }

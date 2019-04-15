@@ -4,11 +4,13 @@
 
 int main()
 {
-    char auxName[500] = "test";
-    if(getName( "Nombre?: ",
-                "Error",
+    //char auxName[500] = "test";
+    char auxCard[17]="Test1";
+
+    /*if(getName( "Nombre?: \n",
+                "Error\n",
                 2,
-                5,
+                10,
                 2,
                 auxName) == 0)
     {
@@ -17,6 +19,22 @@ int main()
     else
     {
         printf("ER: %s",auxName);
+    }*/
+
+
+    if(getCreditCard(   "Numero de tarjeta: \n",
+                        "Error\n",
+                        16,
+                        16,
+                        2,
+                        auxCard) == 0)
+    {
+        printf("OK: %s",auxCard);
     }
+    else
+    {
+        printf("ER: %s",auxCard);
+    }
+
     return 0;
 }

@@ -19,6 +19,15 @@ int getName (   char* msg,
 
 int isValidName (char* cadena);
 
+int isValidNum (char* cadena);
+
+int getCreditCard ( char* msg,
+                    char* msgError,
+                    int minimo,
+                    int maximo,
+                    int reintentos,
+                    char* resultado);
+
 
 
 
