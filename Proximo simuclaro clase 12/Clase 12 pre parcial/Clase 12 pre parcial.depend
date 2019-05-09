@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1557244239 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\llamada.c
+
+1557254425 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+
+1557258684 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\utn_strings.h
+
+1557258214 source:c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\asociado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Asociado.h"
+	"utn_strings.h"
+
+1557258253 c:\users\lucas\desktop\git\laboratorio-y-programacion-1\laboratorio y programacion 1\clases\proximo simuclaro clase 12\clase 12 pre parcial\asociado.h
+
+1557265235 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Clase 12 pre parcial/Asociado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Asociado.h"
+	"utn_strings.h"
+
+1557265235 /home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Clase 12 pre parcial/Asociado.h
+
+1557265235 /home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Clase 12 pre parcial/utn_strings.h
+
+1557265235 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Clase 12 pre parcial/Llamada.c
+
+1557265235 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Clase 12 pre parcial/utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+

@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1557266495 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/Libros.c
+
+1557265958 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1557266509 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/Prestamos.c
+
+1557266525 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/Socios.c
+
+1557265235 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+
+1557265235 /home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/utn_strings.h
+
+1557271184 source:/home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/Autores.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+	"Autores.h"
+
+1557271244 /home/alumno/Descargas/Lucas R/Laboratorio-y-programacion-1/Laboratorio y programacion 1/Clases/Proximo simuclaro clase 12/Modelo examen 2019/Autores.h
+
