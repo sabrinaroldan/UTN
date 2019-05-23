@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1558648819 source:/home/alumno/Documentos/persona/persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
+
+1558647366 /home/alumno/Documentos/persona/persona.h
+
+1558647753 source:/home/alumno/Documentos/persona/utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1558647796 /home/alumno/Documentos/persona/utn.h
+
+1558654240 source:/home/alumno/Documentos/persona/main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+	"utn.h"
+
