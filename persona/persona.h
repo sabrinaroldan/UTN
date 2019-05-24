@@ -10,6 +10,12 @@ typedef struct
 #endif
 
 Persona* Persona_new(void);
+Persona* Persona_newStr(char* id;
+                        char* nombre;
+                        char* apellido;
+                        char* estado;);
+
+
 int Persona_delete(Persona* this);
 
 int Persona_setId(Persona* this, int id);

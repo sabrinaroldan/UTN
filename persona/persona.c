@@ -113,6 +113,110 @@ int Persona_getEstado(Persona* this, int* resultado)
     return retorno;
 }
 
+/*int parseData(char* fileName,Persona* arrayPersonas, int len)
+{
+    Persona personas[len];
+    int len,i;
+
+    for(i=0; i<len; i++)
+    {
+        printf("id:%d nombre:%s apellido:%s edad:%d\n",personas[i].id,personas[i].nombre,
+        personas[i].apellido,personas[i].estado);
+    }
+ exit(EXIT_SUCCESS);
+}
+*/
+
+int parseData(char* fileName,Persona* arrayPersonas, int len)
+{
+     FILE *pFile;
+     int r,i=0;
+     char var1[50],var3[50],var2[50],var4[50];
+     pFile = fopen(fileName,"r");
+
+     if(pFile == NULL)
+     {
+        return -1;
+     }
+
+     do
+     {
+        r = fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",var1,var2,var3,var4);
+        if(r==4)
+        {
+             arrayPersonas[i].id = atoi(var1);
+             strncpy(arrayPersonas[i].nombre,var2,sizeof(arrayPersonas[i].nombre));
+             strncpy(arrayPersonas[i].apellido,var3,sizeof(arrayPersonas[i].apellido));
+             arrayPersonas[i].estado = atoi(var4);
+             i++;
+         }
+         else
+         {
+         break;
+         }
+     }while(!feof(pFile) && i<len);
+     fclose(pFile);
+     return i;
+}
+
+Persona* Persona_newStr(char* id,char* nombre,char* apellido,char* estado)
+{
+    Persona* retorno=NULL;
+    Persona* pAuxPersona;
+
+    if(id!=NULL && nombre!=NULL && apellido!=NULL && estado!=NULL)
+    {
+        pAuxPersona=Persona_new();
+        if(pAuxPersona!=NULL)
+        {
+            if( (!Persona_setNombre(pAuxPersona,nombre))&&
+                (!Persona_setApellido(pAuxPersona,apellido))&&
+                (!Persona_setIdStr(pAuxPersona,id))&&
+                (!Persona_setEstadoStr(pAuxPersona,estado)))
+                {
+                    retorno=pAuxPersona;
+                }
+                else
+                {
+                    Persona_delete(pAuxPersona);
+                }
+        }
+    }
+
+
+}
+
+int Persona_setId(Persona* this, char* id)
+{
+    int retorno = -1;
+    if(this != NULL && id !=NULL && !iValidNumber(id))
+    {
+        Persona_setId(this,atoi(id));
+    }
+    return retorno;
+}
+
+
+int Persona_getIdStr(Persona* this, char* resultado)
+{
+    int retorno = -1;
+    int bufferInt;
+    if(this != NULL && resultado != NULL)
+    {
+        Persona_getId(this,&bufferInt);
+        sprintf(resultado,"%d",;
+        retorno = 0;
+    }
+    return retorno;
+}
+
+
+
+
+
+
+
+
 /*int Persona_compararNombre (Persona* this a, Persona* this b)//comparar y ordenar dos empleados por nombre
 {
     int retorno = -1;

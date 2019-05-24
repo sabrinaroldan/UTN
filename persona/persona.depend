@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1558648819 source:/home/alumno/Documentos/persona/persona.c
+1558656786 source:/home/alumno/Documentos/persona/persona.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -15,7 +15,7 @@
 
 1558647796 /home/alumno/Documentos/persona/utn.h
 
-1558654240 source:/home/alumno/Documentos/persona/main.c
+1558655829 source:/home/alumno/Documentos/persona/main.c
 	<stdio.h>
 	<stdlib.h>
 	"persona.h"

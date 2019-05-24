@@ -2,12 +2,14 @@
 #include <stdlib.h>
 #include "persona.h"
 #include "utn.h"
+#define QTY_ARRAY_PERSONA 1000
 
 // {}  []
 
 int main()
 {
 
+    Persona arrayPersona[QTY_ARRAY_PERSONA];
     FILE *pFile=NULL;
     FILE *pFileBkp=NULL;
 
@@ -25,6 +27,8 @@ int main()
         {
             fscanf(pFile,"%[^,],%[^,],%[^,]%[^\n]\n",
             bufferId,bufferNombre,bufferApellido,bufferEstado);
+
+            parseData("data.csv",arrayPersona, QTY_ARRAY_PERSONA);
 
             Persona* Persona_new();
 
